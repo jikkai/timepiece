@@ -1,9 +1,12 @@
+import parse from './core/parse'
 import format from './core/format'
 
 function Timepiece (date) {
   return (function (date) {
-    const timepiece = new Date(date).toString() === 'Invalid Date' ? new Date() : new Date(date)
-    timepiece.format = format.bind(date)
+    const parsedDate = parse(date)
+    const timepiece = parsedDate
+
+    timepiece.format = format.bind(parsedDate)
     return timepiece
   })(date)
 }
