@@ -1,5 +1,5 @@
 export default {
-  entry: './src/plugins/vue.js',
+  entry: './src/index.js',
   plugins: [
     require('rollup-plugin-uglify')(),
     require('rollup-plugin-babel')({
@@ -8,5 +8,5 @@ export default {
   ],
   format: 'umd',
   moduleName: "timepiece",
-  dest: './dist/timepiece.vue.js'
+  dest: './dist/timepiece.js'
 }

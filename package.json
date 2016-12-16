@@ -3,17 +3,12 @@
   "version": "0.0.1",
   "main": "dist/timepiece.js",
   "scripts": {
-    "build": "rollup -c ./rollup.config.js & rollup -c ./rollup.vue.config.js",
-    "dev": "rollup -c ./rollup.config.js -w",
-    "dev:vue": "rollup -c ./rollup.vue.config.js -w"
+    "init": "lerna run init",
+    "build": "lerna run build"
   },
   "license": "MIT",
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "devDependencies": {
-    "babel-preset-es2015": "^6.18.0",
-    "rollup": "^0.36.4",
-    "rollup-plugin-babel": "^2.6.1",
-    "rollup-plugin-uglify": "^1.0.1",
-    "rollup-watch": "^2.5.0"
+    "lerna": "2.0.0-beta.30"
   }
 }
