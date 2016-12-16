@@ -7,7 +7,7 @@ function format (fmtStr) {
     YYYY: this.getFullYear(),
     M: this.getMonth() + 1,
     MM: zeroFill(this.getMonth() + 1, 2),
-    D: this.getDate() + 1,
+    D: this.getDate(),
     DD: zeroFill(this.getDate(), 2)
   }
   const tokens = fmtStr.match(token)
