@@ -5,10 +5,17 @@ const token = /(\[[^\[]*\])|(\\)?([Hh]mm(ss)?|MM?|DD?|ddd?d?|do?|w[o|w]?|W[o|W]?
 function format (fmtStr) {
   const dateObj = {
     YYYY: this.getFullYear(),
+    YY: this.getFullYear().toString().substring(2),
     M: this.getMonth() + 1,
     MM: zeroFill(this.getMonth() + 1, 2),
     D: this.getDate(),
-    DD: zeroFill(this.getDate(), 2)
+    DD: zeroFill(this.getDate(), 2),
+    H: this.getHours(),
+    HH: zeroFill(this.getHours(), 2),
+    m: this.getMinutes(),
+    mm: zeroFill(this.getMinutes(), 2),
+    s: this.getSeconds(),
+    ss: zeroFill(this.getSeconds(), 2)
   }
   const tokens = fmtStr.match(token)
 
