@@ -1,1 +1,1 @@
-# timepiece
+# timepiece-core
