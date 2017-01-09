@@ -1,6 +1,6 @@
 {
   "name": "timepiece",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "main": "dist/timepiece.js",
   "scripts": {
     "init": "lerna run init",
@@ -9,6 +9,6 @@
   "license": "MIT",
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "devDependencies": {
-    "lerna": "2.0.0-beta.30"
+    "lerna": "^2.0.0-beta.32"
   }
 }
