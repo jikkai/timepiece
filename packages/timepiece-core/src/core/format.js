@@ -26,7 +26,7 @@ function format (fmtStr) {
       result += dateObj[tokens[i]] || tokens[i]
     }
   } else {
-    result = 'Invalid Date'
+    result = ''
   }
 
   return result
