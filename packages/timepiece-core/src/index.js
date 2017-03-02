@@ -8,6 +8,8 @@ function Timepiece (date) {
 
     if (parsedDate) {
       timepiece.format = format.bind(parsedDate)
+    } else {
+      timepiece.__proto__.format = _ => ''
     }
 
     return timepiece
