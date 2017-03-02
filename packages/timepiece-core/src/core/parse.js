@@ -10,6 +10,8 @@ function parse (date) {
       result.setHours(matchedDate[2])
       result.setMinutes(matchedDate[3])
       result.setSeconds(matchedDate[4])
+    } else {
+      result = ''
     }
   }
 

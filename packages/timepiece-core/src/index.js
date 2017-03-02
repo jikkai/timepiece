@@ -6,7 +6,10 @@ function Timepiece (date) {
     const parsedDate = parse(date)
     const timepiece = parsedDate
 
-    timepiece.format = format.bind(parsedDate)
+    if (parsedDate) {
+      timepiece.format = format.bind(parsedDate)
+    }
+
     return timepiece
   })(date)
 }
